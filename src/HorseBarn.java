@@ -1,10 +1,6 @@
-public interface Horse{
-    String getName();
-    int getWeight();
-}
-
 public class  HorseBarn{
     private Horse[] spaces;
+
     public int findHorseSpace(String name){
         for (int i = 0; i < this.spaces.length; i++){
             if(this.spaces[i]!=null && name.equals(this.spaces[i].getName())){
@@ -26,11 +22,5 @@ public class  HorseBarn{
                 }
             }
         }
-    }
-
-    public String toString(){
-        String output = "";
-        output += this.getName()+","+" weighs: "+this.getWeight();
-        return output;
     }
 }
